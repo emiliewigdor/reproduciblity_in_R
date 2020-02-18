@@ -1,0 +1,137 @@
+---
+title: "PrediXcan project"
+output:
+   html_document:
+     toc: true
+     toc_depth: 3
+     toc_float: true
+# bibliography: references.bib
+# link-citations: yes
+---
+TOC created table of content. TOC_depth says how many headers you want in the TOC. TOC_float makes the TOC on the side instead of the top. Bib needs to start at the beginning of the header section. 
+
+# Introduction {#Introduction}
+This is an introduction to reproducibility in R. 
+The curly brackets allow you to link back to this section later. 
+
+## Starting with RStudio
+Information about RStudio
+
+### Keep dat hashtag game strong
+Keep adding hashtags for increasingly small headings. 
+
+You can add **bold text with double asterisks** or __bold text with double underscores__
+You can also use *italics text with single asterisks* or  _single underscores_
+
+Adding superscript is ^easy^, using ^.  
+
+Add subscript using ~tilde~. 
+
+If you add inline code use the backtick `to write code`.
+
+Use the strikethrough text with ~~double~~ tilde. 
+
+If you're writing a lot of text
+then you might want to break it up on your screen but not on the website. This is why you need to put a double space at the end of the sentence to go to the next line. 
+
+But if you have a long sentence
+
+and break it up with two enters, it will split it. 
+
+You can also use the \
+backslash. 
+
+We have covered this in the [Introduction section](#Introduction)
+
+If I want something to go to the next line without an empty line in between  
+Like this. I just put a double space at the end of the sentence.  
+
+You can also create [links to websites like Google](https://www.google.com).
+
+Put the link to the footnote here [^1].  
+
+[^1]: This is how you add footnotes. 
+
+## Lists
+
+Ordered lists take numbers
+
+1. Item a
+2. item b
+3. Item c
+    a. Sublist 1
+    b. Sublist 2
+
+You also have unordered lists:  
+
+- Item A
+- Item B
+
+* Item C
+* Item D
+
+- [ ]
+- [x]
+
+If you upload the above to GitHub it will create a ticked box. 
+
+You can also imbed photos!  
+
+![A cow](https://cdn.britannica.com/55/174255-050-526314B6/brown-Guernsey-cow.jpg)
+
+You can also put photos from your local computer by doing the same as above, but instead of a website link, you put the (relative) file path. 
+
+## Tables
+
+You can create tables using | - 
+
+| Column header | Another column | 
+| ------------- | -------------- |
+| First row     | With info      |
+| More rows     | With more info |
+
+> A greater-than sign creates blocks 
+
+How does the look? 
+
+How would we highlight code?
+
+Single `backticks` are used inline. 
+
+Three backticks create a code chunk. 
+
+```
+Here is my code chunk. 
+Lookin' good. 
+```
+
+Control + Alt + I is a shortcut to insert an R code chunk. 
+
+```{r}
+
+print("This is my R code chunk")
+
+for (i in 1:5) {
+  print(i)
+}
+
+```
+
+```{r}
+75 * 8
+```
+
+```{r}
+calculation_output <- 100*2
+
+calculation_output
+```
+
+```{r}
+calculation_output * 5
+```
+
+```{r}
+download.file(url="https://raw.githubusercontent.com/cambiotraining/reproducibility-training/master/data/gapminder_data.csv", destfile="data/gapminder_data.csv")
+```
+
